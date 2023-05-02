@@ -14,7 +14,8 @@ Welcome to the Facial Expression Recognition project! This project aims to devel
 For this project we have used a private dataset, you can use your own dataset with specified annotations for class categories and arousal and valance values.
 
 ## CNN Architectures
-We have used SIFT as feature extractor and used K-Means to cluster the similar features. SVM and Random forests are used for the classification. In the code you need to add the paths to the train and test image folder if dataset is already splitted other wise use DataSet 2 portion and just add the images folder path in it. You need to specify the images classes names, in the manner already defined in the code, in the variable class_indices. While i have used string processing to get the class name for each image using folder name, so set that according to the path settings. Another important thing to mention is that choose the value of K while calling create clusters function carefully, that can effect performance and efficiency as well.
+
+In this project, we utilized two popular CNN architectures as baselines for our model: ResNet and EfficientNetB0. ResNet is a deep residual neural network that has shown excellent performance in image classification tasks. It uses skip connections to allow information to pass through layers without being altered, thus enabling the network to learn more complex features. EfficientNetB0, on the other hand, is a lightweight and scalable CNN architecture that has been optimized for both accuracy and computational efficiency. It uses a combination of convolutional layers, squeeze-and-excitation blocks, and depthwise separable convolutions to extract features from images while minimizing the number of parameters and computations required. Both ResNet and EfficientNetB0 have been widely used in various computer vision applications, and we chose them as our baselines due to their proven performance in image classification tasks.
 
 ## Results
 
